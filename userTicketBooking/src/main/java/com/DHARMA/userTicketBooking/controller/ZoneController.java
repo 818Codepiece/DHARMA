@@ -1,7 +1,6 @@
 package com.DHARMA.userTicketBooking.controller;
 
 import com.DHARMA.userTicketBooking.dto.TempleDto;
-import com.DHARMA.userTicketBooking.dto.ZoneDto;
 import com.DHARMA.userTicketBooking.entity.Temple;
 import com.DHARMA.userTicketBooking.entity.Zones;
 import com.DHARMA.userTicketBooking.repositiory.ZoneRepository;

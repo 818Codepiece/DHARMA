@@ -1,26 +1,30 @@
-package com.DHARMA.userTicketBooking.entity;
+package com.example.templebooking.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
-import java.time.LocalDate;
-import java.util.List;
+import java.time.Instant;
+import java.util.*;
 
 @Entity
+@Table(name = "temples")
 @Data
-//@Table(name = "temples")
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Temple {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long templeId;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
-    private String name;
-    private String description;
-    private String speciality;
-    private Integer duration;
-    private LocalDate closingDate;
+    private String templeName;
+    private String location;
+    private String timeZone;
+    private Integer defaultCapacity;
+    private Long addressId; // external address reference
 
+    private Instant createdAt;
+    private Instant updatedAt;
 
-    @OneToMany(mappedBy = "temple", fetch = FetchType.LAZY)
-    private List<Darshan> darshans;
+    @OneToMany(mappedBy = "temple", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Zone> zones = new ArrayList<>();
 }

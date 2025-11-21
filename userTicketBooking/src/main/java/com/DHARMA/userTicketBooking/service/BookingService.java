@@ -2,7 +2,7 @@ package com.DHARMA.userTicketBooking.service;
 
 import com.DHARMA.userTicketBooking.dto.BookingDto;
 import com.DHARMA.userTicketBooking.entity.Booking;
-import com.DHARMA.userTicketBooking.entity.BookingStatus;
+import com.DHARMA.userTicketBooking.entity.Enum.BookingStatus;
 import com.DHARMA.userTicketBooking.entity.Darshan;
 import com.DHARMA.userTicketBooking.entity.User;
 import com.DHARMA.userTicketBooking.repositiory.BookingRepository;
@@ -71,7 +71,7 @@ import java.util.List;
 //
 //import com.DHARMA.userTicketBooking.dto.BookingDto;
 //import com.DHARMA.userTicketBooking.entity.Booking;
-//import com.DHARMA.userTicketBooking.entity.BookingStatus;
+//import com.DHARMA.userTicketBooking.entity.Enum.BookingStatus;
 //import com.DHARMA.userTicketBooking.entity.Darshan;
 //import com.DHARMA.userTicketBooking.entity.User;
 //import com.DHARMA.userTicketBooking.repository.BookingRepository;

@@ -23,7 +23,7 @@ public class Darshan {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "zone_id", nullable = false)
-    private Zones zones;
+    private Zone zones;
 
     @OneToMany(mappedBy = "darshan",fetch = FetchType.EAGER)
     private List<Booking> bookings;

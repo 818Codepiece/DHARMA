@@ -1,14 +1,12 @@
 package com.DHARMA.userTicketBooking.controller;
 
 import com.DHARMA.userTicketBooking.dto.BookingDto;
-import com.DHARMA.userTicketBooking.dto.ZoneDto;
 import com.DHARMA.userTicketBooking.entity.Booking;
-import com.DHARMA.userTicketBooking.entity.BookingStatus;
+import com.DHARMA.userTicketBooking.entity.Enum.BookingStatus;
 import com.DHARMA.userTicketBooking.entity.Zones;
 import com.DHARMA.userTicketBooking.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

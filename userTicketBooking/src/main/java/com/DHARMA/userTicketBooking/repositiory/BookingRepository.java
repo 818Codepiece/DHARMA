@@ -1,7 +1,7 @@
 package com.DHARMA.userTicketBooking.repositiory;
 
 import com.DHARMA.userTicketBooking.entity.Booking;
-import com.DHARMA.userTicketBooking.entity.BookingStatus;
+import com.DHARMA.userTicketBooking.entity.Enum.BookingStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

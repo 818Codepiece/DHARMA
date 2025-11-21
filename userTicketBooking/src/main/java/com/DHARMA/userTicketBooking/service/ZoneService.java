@@ -1,6 +1,5 @@
 package com.DHARMA.userTicketBooking.service;
 
-import com.DHARMA.userTicketBooking.dto.ZoneDto;
 import com.DHARMA.userTicketBooking.entity.Zones;
 import com.DHARMA.userTicketBooking.repositiory.ZoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;

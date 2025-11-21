@@ -1,6 +1,5 @@
 package com.DHARMA.userTicketBooking.service;
 
-import com.DHARMA.userTicketBooking.dto.DarshanDto;
 import com.DHARMA.userTicketBooking.entity.Darshan;
 import com.DHARMA.userTicketBooking.entity.Temple;
 import com.DHARMA.userTicketBooking.repositiory.DarshanRepository;
